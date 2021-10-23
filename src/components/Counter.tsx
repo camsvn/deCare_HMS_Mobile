@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text, Button} from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
-import {decrement, increment} from '../state/features/counter';
+import {decrement, incrementAsync} from '../state/features/counter';
 import {RootState} from '../state/store';
 
 const Counter = () => {
@@ -10,7 +10,7 @@ const Counter = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="increment" onPress={() => dispatch(increment())} />
+      <Button title="increment" onPress={() => dispatch(incrementAsync(2))} />
       <Text>{count}</Text>
       <Button title="decrement" onPress={() => dispatch(decrement())} />
     </SafeAreaView>

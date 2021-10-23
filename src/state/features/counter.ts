@@ -1,6 +1,6 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice, Dispatch, PayloadAction} from '@reduxjs/toolkit';
 import {WritableDraft} from 'immer/dist/types/types-external';
-
+// import {Dispatch} from 'react';
 export interface CounterState {
   count: number;
 }
@@ -30,9 +30,15 @@ export const counterSlice = createSlice({
   reducers: {
     increment: incrementCount,
     decrement: decrementCount,
-    incrementbyAmount: incrementCountbyAmount,
+    incrementByAmount: incrementCountbyAmount,
   },
 });
 
-export const {increment, decrement, incrementbyAmount} = counterSlice.actions;
+export const incrementAsync = (amount: number) => (dispatch: Dispatch) => {
+  setTimeout(() => {
+    dispatch(incrementByAmount(amount));
+  }, 1000);
+};
+
+export const {increment, decrement, incrementByAmount} = counterSlice.actions;
 export default counterSlice.reducer;
