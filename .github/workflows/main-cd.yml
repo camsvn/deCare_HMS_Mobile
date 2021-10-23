@@ -13,12 +13,22 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    # - uses: actions/setup-node@master
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@master
     # - uses: c-hive/gha-yarn-cache@v1
 
-    # - name: Install node modules
-    #   run: |
-    #     yarn install
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+        restore-keys: npm-
+
+
+    - name: Install node modules
+      run: |
+        npm install
 
     - name: Cache Gradle Wrapper
       uses: actions/cache@v2
