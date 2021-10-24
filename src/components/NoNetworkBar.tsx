@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { SafeAreaView, Text, StyleSheet, StatusBar } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {SafeAreaView, Text, StyleSheet, StatusBar} from 'react-native';
 import NetInfo from '@react-native-community/netinfo';
 
-import { ERRORS } from '../constants/app-constants';
-import { theme } from '../theme';
+import {ERRORS} from '../constants/app-constants';
+import {theme} from '../theme';
 
 const OfflineBar = () => {
   const [isConnected, setConnected] = useState<boolean>(true);
@@ -17,7 +17,7 @@ const OfflineBar = () => {
 
   return !isConnected ? (
     <SafeAreaView style={styles.container}>
-      <StatusBar backgroundColor={theme['color-danger-800']}/>
+      <StatusBar backgroundColor={theme['color-danger-800']} />
       <Text style={styles.offlineText}>{ERRORS.OFFLINE}</Text>
     </SafeAreaView>
   ) : null;
