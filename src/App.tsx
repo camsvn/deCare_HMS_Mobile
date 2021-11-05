@@ -5,12 +5,17 @@ import {store} from './state/store';
 
 import Counter from './components/Counter';
 import NoNetworkBar from './components/NoNetworkBar';
+import Router from './Router';
+import {NativeBaseProvider} from 'native-base';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <NoNetworkBar />
-      <Counter />
+      <NativeBaseProvider>
+        <NoNetworkBar />
+        {/* <Counter /> */}
+        <Router />
+      </NativeBaseProvider>
     </Provider>
   );
 };
