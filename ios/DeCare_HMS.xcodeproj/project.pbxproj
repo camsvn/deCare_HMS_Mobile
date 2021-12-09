@@ -18,6 +18,7 @@
 		82AF6F9AFF3A45CF9E5E0257 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1817FFC9ECAB42DB82398122 /* Gilroy-Medium.ttf */; };
 		1467C99E333547CBAF0B9564 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB75877A22AB48DBB0DAC4D2 /* Gilroy-Regular.ttf */; };
 		CB0E95ED297745B9BEE6249B /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92D3B0603E64495580EFE86C /* Gilroy-SemiBold.ttf */; };
+		A53AE5E7B78D407F8EF39EBC /* Mom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77CCE8A8C49043AB9CA6EA2D /* Mom.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		1817FFC9ECAB42DB82398122 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; name = "Gilroy-Medium.ttf"; path = "../assets/Gilroy-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		BB75877A22AB48DBB0DAC4D2 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; name = "Gilroy-Regular.ttf"; path = "../assets/Gilroy-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		92D3B0603E64495580EFE86C /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; name = "Gilroy-SemiBold.ttf"; path = "../assets/Gilroy-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77CCE8A8C49043AB9CA6EA2D /* Mom.ttf */ = {isa = PBXFileReference; name = "Mom.ttf"; path = "../assets/Mom.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				1817FFC9ECAB42DB82398122 /* Gilroy-Medium.ttf */,
 				BB75877A22AB48DBB0DAC4D2 /* Gilroy-Regular.ttf */,
 				92D3B0603E64495580EFE86C /* Gilroy-SemiBold.ttf */,
+				77CCE8A8C49043AB9CA6EA2D /* Mom.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				82AF6F9AFF3A45CF9E5E0257 /* Gilroy-Medium.ttf in Resources */,
 				1467C99E333547CBAF0B9564 /* Gilroy-Regular.ttf in Resources */,
 				CB0E95ED297745B9BEE6249B /* Gilroy-SemiBold.ttf in Resources */,
+				A53AE5E7B78D407F8EF39EBC /* Mom.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

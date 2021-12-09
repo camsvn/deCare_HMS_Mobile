@@ -7,11 +7,12 @@ import Counter from './components/Counter';
 import NoNetworkBar from './components/NoNetworkBar';
 import Router from './Router';
 import {NativeBaseProvider} from 'native-base';
+import {theme_config} from './theme';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <NativeBaseProvider>
+      <NativeBaseProvider theme={theme_config}>
         <NoNetworkBar />
         {/* <Counter /> */}
         <Router />

@@ -19,9 +19,11 @@ const ExitIcon = (
 
 const HeaderBarComponent = (props: {title: string}) => {
   const {title} = props;
-  <Container>
-    <Box>{title}</Box>
-  </Container>;
+  return (
+    <Container>
+      <Box>{title}</Box>
+    </Container>
+  );
 };
 
 export default HeaderBarComponent;

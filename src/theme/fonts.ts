@@ -14,10 +14,9 @@ export const font_theme = {
   'font-bold': <fontWeight>'700',
 
   // Font size
-  'font-size-extra-large': 20,
-  'font-size-large': 18,
-  'font-size-medium': 16,
-  'font-size-small': 14,
+  'font-size-extra-large': 32,
+  'font-size-large': 21,
+  'font-size-medium': 18,
+  'font-size-small': 16,
   'font-size-extra-small': 12,
-  'font-size-extra-extra-small': 10,
 };
